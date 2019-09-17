@@ -44,11 +44,11 @@ public class NotasActivity extends AppCompatActivity {
         String nota3 = etNota3.getText().toString();
         String nota4 = etNota4.getText().toString();
 
-        int calificacion1 = Integer.parseInt(nota1);
-        int calificacion2 = Integer.parseInt(nota2);
-        int calificacion3 = Integer.parseInt(nota3);
-        int calificacion4 = Integer.parseInt(nota4);
-        int totalNota;
+        double  calificacion1 = Double.parseDouble(nota1);
+        double calificacion2 = Double.parseDouble(nota2);
+        double calificacion3 = Double.parseDouble(nota3);
+        double calificacion4 = Double.parseDouble(nota4);
+        double totalNota;
         totalNota = ((calificacion1 + calificacion2 + calificacion3 + calificacion4) / 4);
         Toast.makeText(this,NotasString.PROMEDIO.getMsj()+ totalNota, Toast.LENGTH_SHORT).show();
 
